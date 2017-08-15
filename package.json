@@ -1,5 +1,5 @@
 {
-  "name": "safe-proxy",
+  "name": "safeproxy",
   "version": "1.0.0",
   "description": "safe access of objects",
   "main": "index.js",
@@ -11,5 +11,13 @@
   "license": "MIT",
   "engines": {
   	"node": ">=6"
-  }
+  },
+  "keywords": [
+    "safe access",
+    "safe proxy",
+    "unnest",
+    "safe object",
+    "proxy object",
+    "es6 proxy"
+  ]
 }
