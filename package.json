@@ -1,0 +1,15 @@
+{
+  "name": "safe-proxy",
+  "version": "1.0.0",
+  "description": "safe access of objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "files": [ "index.js" ],
+  "author": "Tony Lukasavage",
+  "license": "MIT",
+  "engines": {
+  	"node": ">=6"
+  }
+}
