@@ -24,12 +24,16 @@ console.log(obj.family.kids);    // prints "[ 'june', 'charlie' ]"
 console.log(obj.family.kids[0]); // prints "june"
 
 // unsafe access made safe
-console.log(obj.what.is.going.on.here);                           // print "{}"
-console.log(obj.can[3].even[123][432].handle.arrays[9]);          // print "{}"
-console.log(obj.family.kids[2].my.parents.want.another.grandkid); // print "{}"
+console.log(obj.what.is.going.on.here);                           // prints "{}"
+console.log(obj.can[3].even[123][432].handle.arrays[9]);          // prints "{}"
+console.log(obj.family.kids[2].my.parents.want.another.grandkid); // prints "{}"
+
+// even works with functions
+console.log(obj.i.cant().believe[1][2][3].this.doesnt().throw);   // prints "{}"
 
 ```
 
 ## big thanks
 
-[Gidi Meir Morris's article](https://medium.com/@chekofif/using-es6-s-proxy-for-safe-object-property-access-f42fa4380b2c) on this topic is where I found this pattern. Big thanks to him for taking the time to share and break it down.
+* [Gidi Meir Morris's article](https://medium.com/@chekofif/using-es6-s-proxy-for-safe-object-property-access-f42fa4380b2c) on this topic is where I found this pattern. Big thanks to him for taking the time to share and break it down.
+* [Tom Van Cutsem's post](https://github.com/tvcutsem/harmony-reflect/issues/38#issuecomment-49702834) that explained how to stringify Proxy objects.
