@@ -26,4 +26,8 @@ test(obj[0][1][123].taco, {});
 test(obj.blarg.func().foo, {});
 test(obj.foo.taco.borgia().pope.taco().borgia.pope(obj.whatwhat()), {});
 
+// assigments do nothing
+obj.never.gonna.give.you.up = 123;
+test(obj.never.gonna.give.you.up, {});
+
 console.log('tests passed.');
